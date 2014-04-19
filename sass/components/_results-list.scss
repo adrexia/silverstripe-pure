@@ -1,0 +1,29 @@
+/*
+ * Styling for results
+ */
+
+.results-list{
+	.item.even{
+		@include clearfix;
+		border-bottom:1px solid $default-color;
+		border-top:1px solid $default-color;
+		clear:both;
+		margin-bottom:10px;
+		padding-top:10px;
+	}
+	.abstract{
+		float:left;
+		&.has-image{
+			width:80%;
+		}
+	}
+	figure.featured-image {
+		@include box-sizing(border-box);
+		float:left;
+		padding-left:30px;
+		width:20%;
+	}
+	.results{
+		list-style:none;
+	}
+}

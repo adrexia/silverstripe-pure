@@ -1,0 +1,13 @@
+// This file imports all other named scss files in the pure folder.
+// Do not touch this file, as it will be overridden on upgrade
+
+@import "sass/pure/_base";
+@import "sass/pure/_buttons";
+@import "sass/pure/_forms";
+@import "sass/pure/_grids-responsive-old-ie";
+@import "sass/pure/_grids-responsive";
+@import "sass/pure/_grids-units";
+@import "sass/pure/_grids";
+@import "sass/pure/_menus-paginator";
+@import "sass/pure/_menus";
+@import "sass/pure/_tables";
