@@ -1,0 +1,36 @@
+.pure-menu {
+	&.menu-default {
+		background: $menu-color;
+		padding: 8px 10px;
+		border-radius: 3px;
+		font-size: $base-font-size + 2;
+		a {
+			color: $menu-link-color;
+			&:hover, &:focus, &.pure-menu-selected{
+				border-radius: 3px;
+				background: $menu-link-hover-background-color;
+				color: $menu-link-hover-color;
+			}
+		}
+	}
+	&.menu-plain {
+		border: 0;
+		margin-top: 15px;
+		a {
+			padding: 5px 10px;
+			margin-left:-10px;
+		}
+	}
+	&.menu-plain-submenu{
+		border: 0;
+		background: none;
+		a {
+			padding-left:40px;
+		}
+		.menu-plain-submenu {
+			a {
+				padding-left: 60px;
+			}
+		}
+	}
+}

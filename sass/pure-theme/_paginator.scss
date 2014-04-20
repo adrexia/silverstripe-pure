@@ -1,0 +1,18 @@
+.pure-paginator {
+	.pure-button{
+		height: 2.5em;
+	}
+	.prev, .next {
+		text-shadow: none;
+		color: $body-font-color;
+		&.disabled {
+			color: #C0C1C3;
+		}
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+
+}
+
+

@@ -1,0 +1,34 @@
+/* Customise search field */
+.search-group{
+	@include clearfix;
+	form {
+		padding-top: 30px;
+	}
+	.search-query {
+		vertical-align: top;
+		display:inline-block;
+		padding: 0.6em 1em;
+		width: 200px;
+		color: $body-font-color;
+		-webkit-appearance: textfield;
+	}
+	.pure-button{
+		border-radius: 0 3px 3px 0;
+		display:inline-block;
+		height: 40px;
+		line-height: normal;
+		margin-left: -7px;
+		input{
+			display:block;
+			width:100%;
+			height:100%;
+			vertical-align: baseline;
+		}
+	}
+	fieldset{
+		text-align: right;
+		padding-left: 0;
+		padding-right: 0;
+		border: 0;
+	}
+}

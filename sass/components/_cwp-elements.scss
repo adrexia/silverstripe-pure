@@ -55,19 +55,12 @@ iframe {
 
 // Styles for navigation pills
 ul.nav-pills {
+	margin: 10px 0 0;
+	padding: 0;
 	li {
 		display: inline;
-		margin-right: 10px;
-		list-style: none;
-		a.badge{
-			line-height:19px;
-			&.light{
-				border:none;
-			}
-			&:hover{
-				background-color:$default-color;
-			}
-		}
+		margin-left: 10px;
+		margin-right: 0;
 	}
 }
 
@@ -103,33 +96,71 @@ ul.nav-pills {
 }
 
 .month-filter{
+	@include clearfix;
 	margin-top:10px;
 	padding-bottom:30px;
 	ol {
 		margin: 0;
 	}
 	.year {
-		float:left;
-		padding-right:10px;
+		clear: both;
+		float: left;
+		padding-right: 10px;
+		margin: 3px 0;
 	}
-	.months{
-		@include clearfix;
+}
+
+.tags {
+	@include clearfix;
+	list-style: none;
+	float: left;
+	margin: 3px 0;
+	padding: 0;
+	padding-right: 10px;
+	.label {
+		border-radius: 3px;
+		float: left;
+		padding: 3px 5px;
+		&.default{
+			background: $default-color;
+		}
+		&.primary {
+			background: $primary-color;
+			a {
+				color: #fff;
+			}
+		}
 	}
 }
 
 .results-header{
-	@extend .breadcrumb;
 	@include clearfix;
 	p {
 		line-height:34px;
 	}
 }
 
-// Hide the out of the box divider - gumby has its own
 ol.breadcrumb{
-	margin:0;
-	.divider{
-		display:none;
+	margin-top: 20px;
+	padding: 0;
+	li {
+		display: inline;
+		margin: 0;
+		font-size: 0.8em;
+		.divider {
+			display: none;
+		}
+		a {
+			position: relative;
+			padding-right: 17px;
+			&:after{
+				display: block;
+				content: '\003E';
+				position: absolute;
+				top:0;
+				right: 0;
+			}
+		}
 	}
 }
 
@@ -144,11 +175,12 @@ ol.breadcrumb{
 // Styles for translation links
 .translations {
 	float: right;
-	padding-top: 10px;
 	li {
-		display: inline;
-		margin-left: 10px;
-		margin-right:0;
+		font-size: 13px;
+		a {
+			color: $body-font-color;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -203,6 +235,7 @@ ol.breadcrumb{
 // Styling for the hero content
 .hero-unit .content{
 	@include border-radius($button-radius);
+//    @include box-sizing(border-box);
 	background:$default-color;
 	margin-bottom:30px;
 	width:100%;

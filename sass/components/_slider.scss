@@ -1,5 +1,5 @@
 /*
- * Slider styles 
+ * Slider styles
  */
 
 
@@ -76,7 +76,7 @@ html[xmlns] .slides {
   display: block;
 }
 
-/* 
+/*
  * FlexSlider Theme (based on default theme)
  */
 .flexslider {
@@ -103,15 +103,12 @@ html[xmlns] .slides {
 		}
 		.text{
 			@include border-radius(0 0 $button-radius $button-radius);
-			background:$default-color; 
+			background:$default-color;
 			color:$body-font-color;
 			padding:10px 30px 30px;
 			width:100%;
 			p{
-				font-size:$med;
-				@media screen and (max-width: 860px) {
-					font-size:$norm;
-				}
+				font-size:$base-font-size;
 			}
 		}
 	}
@@ -255,11 +252,11 @@ html[xmlns] .slides {
 	position:relative;
 	z-index:6;
 	&:hover {
-		background: $body-link-hover-color;
+		background: $link-hover-color;
 	}
 	&.flex-active {
 		background: #000;
-		background: $body-link-color;
+		background: $link-color;
 		cursor: default;
 	}
 }

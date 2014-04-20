@@ -1,0 +1,15 @@
+{
+  "name": "silverstripe-pure",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:memolog/grunt-sass-convert.git"
+    },
+  "devDependencies": {
+    "bower": "~1.2.5",
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-run-grunt": "*",
+    "grunt-sass-compile-imports": "git://github.com/adrexia/grunt-sass-compile-imports.git",
+    "grunt-sass-convert": "git://github.com/adrexia/grunt-sass-convert.git"
+  }
+}

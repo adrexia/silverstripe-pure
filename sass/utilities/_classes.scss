@@ -1,0 +1,11 @@
+// vertically align stuff
+.valign {
+  display: table;
+  width: 100%;
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+  }​
+  > article {
+  }
+}

@@ -1,0 +1,19 @@
+* {
+	@include box-sizing(border-box);
+}
+
+.pure-g-padding [class*="pure-u"]{
+	@include box-sizing(border-box);
+	padding: 0 30px;
+}
+
+
+
+.container {
+	margin:0 auto;
+	max-width: $container-width;
+}
+
+.layout {
+	margin-bottom: 50px;
+}

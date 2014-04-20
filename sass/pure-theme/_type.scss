@@ -1,0 +1,110 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+	font-family: $font-family;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font-family;
+	&.plain{
+		font-family: $font-family;
+	}
+	&.small {
+		font-size: 1em;
+	}
+}
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin-top: 0.2em;
+}
+
+h2 {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1.3em;
+	font-weight: 400;
+	margin-bottom: 1em;
+	&.small {
+		font-size: 0.9em;
+	}
+}
+
+h6 {
+	font-size: 1.3em;
+	font-weight: 400;
+	font-style: italic;
+	margin-bottom: 0.9em;
+	&.small {
+		font-size: 0.8em;
+	}
+}
+
+p {
+	font-size: $base-font-size;
+	line-height: 1.5em;
+	color: $body-font-color;
+	b, strong{
+		font-weight: 700;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration:none;
+	&:visited{
+		color:$link-visited-color;
+	}
+	&:hover, &:focus{
+		color:$link-hover-color;
+	}
+}
+
+ul, ol{
+	font-size: $base-font-size;
+}
+
+blockquote{
+	border-left: 5px solid $primary-color;
+	padding-left: 20px;
+	margin-left: 0;
+}
+
+table {
+	@extend .pure-table;
+	background: $table-bgcolor;
+	border: $table-border-size $table-border-style $table-border-color;
+	font-size: $base-font-size;
+	width:100%;
+	thead {
+		background: $table-thead-bgcolor;
+		color: $table-thead-color;
+		th{
+			padding: 0.7em 1.2em;
+		}
+	}
+	th {
+		font-family: $table-header-font-family;
+		font-size: 1em;
+		font-weight: 700;
+	}
+	td, th{
+		border-left: $table-cell-border-size $table-cell-border-style $table-cell-border-color;
+		&:first-child {
+			border: 0;
+		}
+	}
+}
+

@@ -42,7 +42,7 @@ ul.sitemap {
 				font-size: 12px;
 			}
 			&.open .toggleIco {
-				@extend .icon-minus;
+			//	@extend .icon-minus;
 			}
 			&.loading {
 				.toggleIco {
@@ -57,7 +57,7 @@ ul.sitemap {
 			}
 		}
 	}
-	
+
 	li {
 		background: $default-color;
 		border-top: 1px solid $table-border-color;
@@ -83,7 +83,7 @@ ul.sitemap {
 			.sitetree-icon {
 				margin: 0 10px 0 15px;
 			}
-			
+
 		}
 		ul{
 			margin: 0;
@@ -153,11 +153,11 @@ ul.sitemap {
 								 				li{
 								 					border:none;
 								 				}
-								 			}	
+								 			}
 											li{
 												#IE9 &{
 													padding-left:10px;
-												}	
+												}
 												background: none;
 												border:none;
 												&.last,&.first{
