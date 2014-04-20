@@ -110,6 +110,9 @@ html[xmlns] .slides {
 			p{
 				font-size:$base-font-size;
 			}
+			h3{
+				margin:10px 0;
+			}
 		}
 	}
 }
@@ -228,7 +231,7 @@ html[xmlns] .slides {
 .flex-control-nav {
 	width: 100%;
 	position: absolute;
-	bottom: 3px;
+	bottom: 12px;
 	text-align: center;
 	@media screen and (max-width: 959px) {
 		bottom: 0px;
