@@ -39,3 +39,8 @@ There are a couple of fonts supplied, but they are intended to act as examples o
 
 ## How to use
 Coming soon
+
+## Screenshot
+_HomePage (work in progress)_
+
+![Home page screen shot](https://github.com/adrexia/silverstripe-pure/blob/master/images/pure-wip.png "Home page screen shot")
