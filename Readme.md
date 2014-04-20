@@ -8,7 +8,9 @@ It is intended that most colours will be editable from a global variables file. 
 Accessibility is being taken into account, but otherwise the theme uses the pure defaults with minor tweaking to fit into the cwp template environment.
 
 ## Purpose
-This theme is intended as a starting point for development, rather than a theme to be used out of the box. For this reason, it has not been styled to *look* like the CWP default theme, and design modifications have been kept to a minimum. Hopefully this should mean you spend less time taking out design features you don't want, and have more time to spend on adding your own themes.
+This theme is intended as a starting point for development, rather than a theme to be used out of the box. Design modifications have been kept to a minimum. Hopefully this should mean you spend less time taking out design features you don't want, and have more time to spend on adding your own themes.
+
+There are a couple of fonts supplied, but they are intended to act as examples only. It shoulkd be easy enough to replace both (hint - they are defined in sass/components/_fonts.scss and referenced in sass/var/_globals.scss). 
 
 
 ## Browser support
