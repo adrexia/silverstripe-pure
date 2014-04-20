@@ -1,6 +1,6 @@
 <div class="abstract<% if FeaturedImage %> has-image<% end_if %>">
 	<header>
-		<h4><a href="$Link">$Title</a></h4>
+		<h4 class="plain small"><a href="$Link">$Title</a></h4>
 	</header>
 	<p class="meta-data">
 		<% if Category %>

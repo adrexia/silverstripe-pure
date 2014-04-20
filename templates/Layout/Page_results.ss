@@ -1,5 +1,5 @@
-<div class="row">
-	<div id="main" class="columns twelve results-list" role="main">
+<div class="pure-g pure-g-padding">
+	<div id="main" class="pure-u-1 results-list" role="main">
 		<h1 class="search-query page-header">Search results</h1>
 
 
@@ -31,8 +31,5 @@
 		</article>
 		<% end_if %>
 	</div>
-	<footer class="content-footer columns twelve">
-		<% include PrintShare %>
-		<% include LastEdited %>
-	</footer>
+	<% include ContentFooter %>
 </div>

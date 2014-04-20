@@ -4,7 +4,21 @@
 // Include the compass library, because it is awesome
 @import "compass";
 
+// Include global variables and utilities
+@import "var/globals";
+@import "utilities/_mixins";
+@import "utilities/_classes";
+
 // Include all of the pure library (or you can include the components you want)
 @import "pure/all";
 
+// Include theming of the pure library
+@import "pure-theme/all";
+
+// Include all components
+// To keep this file up-to-date, you can use: grunt build-components
 @import "components/all";
+
+
+// Include custom css file
+@import "custom";

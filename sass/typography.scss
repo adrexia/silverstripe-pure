@@ -1,43 +1,24 @@
-/**
-* Gumby Framework
-* ---------------
-*
-* Follow @gumbycss on twitter and spread the love.
-* We worked super hard on making this awesome and released it to the web.
-* All we ask is you leave this intact. #gumbyisawesome
-*
-* Gumby Framework
-* http://gumbyframework.com
-*
-* Built with love by your friends @digitalsurgeons
-* http://www.digitalsurgeons.com
-*
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-*/
-
-
-
 @charset "UTF-8";
 
-@import "modular-scale";
-
-@import "var/settings";
-@import "var/lists";
-@import "var/icons/entypo";
-
+// Include the compass library, because it is awesome
 @import "compass";
-@import "compass/reset";
 
-@import "functions/all";
+// Include global variables and utilities
+@import "var/globals";
+@import "utilities/_mixins";
+@import "utilities/_classes";
 
-@import "components/base";
-@import "fonts";
-@import "components/_typography";
-@import "silverstripe-type";
+// Include font libraries
+@import "components/_fonts";
 
-@import "ui/icons";
-@import "ui/labels";
-@import "ui/images";
-@import "ui/video";
-@import "ui/tables";
+// Include pure typography classes
+@import "pure/_base";
+@import "pure/_buttons";
+@import "pure/_tables";
+
+// Include themed pure typography classes
+@import "pure-theme/_buttons";
+@import "pure-theme/_type";
+
+//Include styling for silverstripe elements
+@import "components/_silverstripe-type";

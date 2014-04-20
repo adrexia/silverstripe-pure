@@ -8,30 +8,33 @@
 	<% base_tag %>
 	<%-- $FilterDescription adds additional information from the news and events areas --%>
 	<title>$Title <% if FilterDescription %>- $FilterDescription<% end_if %> | $SiteConfig.Title</title>
-	
+
 	$MetaTags(false)
 	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
 
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements. It must be included _before_ the body element -->
 	<!--[if lt IE 9]>
 		<script src="$ThemeDir/js/libs/html5shiv-printshiv.js"></script>
+		<link href="$ThemeDir/css/ie-grids.css" rel='stylesheet' type='text/css'>
 	<![endif]-->
 	<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
-	<% include MetaIcons %>
+<% include MetaIcons %>
 </head>
 
 <body data-spy="scroll" class="$ClassName">
 	<% include SkipLinks %>
-	<div class="row">
-		<div class="twelve columns">
-			<% include Header %>
-			<div class="layout" id="layout">
-				$Layout
-			</div>
-			<% include Footer %>
-		</div>
+	<div class="container">
+		<% include Header %>
+		<% include Navbar %>
 	</div>
+
+	<div class="layout container">
+			$Layout
+	</div>
+
+	<% include Footer %>
+
 	<% if SiteConfig.GACode %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -50,7 +53,6 @@
 	<% end_if %>
 
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/modernizr.min.js"></script>
-	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/gumby.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/js/libs/jquery.flexslider.js"></script>
 </body>
 </html>

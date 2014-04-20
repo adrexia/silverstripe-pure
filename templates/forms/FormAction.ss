@@ -3,7 +3,7 @@
 		<% if ButtonContent %>$ButtonContent<% else %>$Title<% end_if %>
 	</button>
 <% else %>
-	<div class="btn medium primary metro">
+	<div class="pure-button pure-button-primary">
 		<input $AttributesHTML>
 	</div>
 <% end_if %>

@@ -8,10 +8,10 @@ $PageComments
 
 <!-- Example row of columns -->
 <h2 class="nonvisual-indicator">Features</h2>
-<div class="row">
-	
+<div class="pure-g pure-g-padding">
+
 	<% if Quicklinks %>
-	<div class="columns link-set three">
+	<div class="link-set pure-u-1 pure-u-md-1-5">
 		<h3><i class="icon-link" aria-hidden="true"></i> Quicklinks</h3>
 		<ul>
 			<% loop Quicklinks %>
@@ -22,7 +22,7 @@ $PageComments
 	<% end_if %>
 
 	<% if NewsItems %>
-	<div class="columns <% if not Quicklinks %>six<% else %>five<% end_if %> results-list">
+	<div class="pure-u-1 <% if not Quicklinks %>pure-u-md-1-2<% else %>pure-u-md-2-5<% end_if %> results-list">
 		<h3><i class="icon-layout" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h3>
 		<% loop getNewsItems(3) %>
 			<article class="$EvenOdd $FirstLast item">
@@ -32,7 +32,7 @@ $PageComments
 	</div>
 	<% end_if %>
 
-	<div class="columns <% if not Quicklinks %>six<% else %>four<% end_if %> feature">
+	<div class="pure-u-1 <% if not Quicklinks %>pure-u-md-1-2<% else %>pure-u-md-2-5<% end_if %> feature">
 		<% if $FeatureOneTitle %>
 			<h3><% if $FeatureOneCategory %><i class="icon-$FeatureOneCategory" aria-hidden="true"></i> <% end_if %>$FeatureOneTitle</h3>
 		<% end_if %>
@@ -57,7 +57,6 @@ $PageComments
 			<% end_if %>
 		<% end_if %>
 	</div>
-	<footer class="content-footer columns twelve">
-			<% include LastEdited %>
-	</footer>
 </div>
+
+<% include ContentFooter %>
