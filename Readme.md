@@ -1,5 +1,6 @@
 # Pure Theme for SilverStripe
 _(Note: Still in active development - not finished)_
+
 This project uses templates for page types used by the New Zealand Common Web Platform, but substitutes bootstrap for the Pure CSS framework (http://stage.purecss.io/). Compass, Custom css and thirdparty tools are used to bridge the gap. 
 
 It is intended that most colours will be editable from a global variables file. Because of this, some duplication of css will occur. However, the overall size of the compiled CSS is significantly smaller than that produced by CWP's bootstrap.
