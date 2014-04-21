@@ -33,10 +33,16 @@ $link-visited-color: darken($link-color, 10%);
 $button-radius: 3px;
 
 // Menu bar
-$menu-color: darken($error-color, 5%);
+$menu-color: darken($error-color, 5%); //#8058A5; - purple theme
 $menu-link-color: #fff;
 $menu-link-hover-color: #fff;
 $menu-link-hover-background-color: darken($menu-color, 15%);
+
+// Footer 
+$footer-color: $menu-color;
+$footer-link-color: $menu-link-color;
+$footer-link-hover-color: $menu-link-hover-color;
+$footer-link-hover-background-color: $menu-link-hover-background-color;
 
 // Tables
 $table-header-font-family: $font-family;

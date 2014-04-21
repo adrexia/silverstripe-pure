@@ -1,5 +1,5 @@
 <header>
-	<h4 class="plain small"><a href="$Link">$Title</a></h4>
+	<h4 class="heading-plain-small"><a href="$Link">$Title</a></h4>
 </header>
 
 <% if $Date %>

@@ -5,10 +5,14 @@ html, button, input, select, textarea,
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font-family;
-	&.plain{
+	&.heading-plain{
 		font-family: $font-family;
 	}
-	&.small {
+	&.heading-small {
+		font-size: 1em;
+	}
+	&.heading-plain-small {
+		font-family: $font-family;
 		font-size: 1em;
 	}
 }
@@ -37,7 +41,10 @@ h5 {
 	font-size: 1.3em;
 	font-weight: 400;
 	margin-bottom: 1em;
-	&.small {
+	&.heading-small {
+		font-size: 0.9em;
+	}
+	&.heading-plain-small {
 		font-size: 0.9em;
 	}
 }
@@ -47,7 +54,10 @@ h6 {
 	font-weight: 400;
 	font-style: italic;
 	margin-bottom: 0.9em;
-	&.small {
+	&.heading-small {
+		font-size: 0.8em;
+	}
+	&.heading-plain-small {
 		font-size: 0.8em;
 	}
 }
@@ -64,11 +74,23 @@ p {
 a {
 	color: $link-color;
 	text-decoration:none;
+	h3 & {
+		color: $body-font-color;
+		i {
+			color: $link-color;
+		}
+	}
 	&:visited{
 		color:$link-visited-color;
+		h3 & {
+			color: $body-font-color;
+		}
 	}
 	&:hover, &:focus{
 		color:$link-hover-color;
+		h3 & {
+			color:$link-color;
+		}
 	}
 }
 

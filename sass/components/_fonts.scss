@@ -4,3 +4,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:400,700,400italic,700italic&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic);
+
+@font-face {
+	font-family: 'ion';
+	src:url('#{$file-path}/fonts/ion/ion.eot?-uaazva');
+	src:url('#{$file-path}/fonts/ion/ion.eot?#iefix-uaazva') format('embedded-opentype'),
+		url('#{$file-path}/fonts/ion/ion.woff?-uaazva') format('woff'),
+		url('#{$file-path}/fonts/ion/ion.ttf?-uaazva') format('truetype'),
+		url('#{$file-path}/fonts/ion/ion.svg?-uaazva#ion') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

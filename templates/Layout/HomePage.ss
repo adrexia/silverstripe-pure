@@ -12,7 +12,7 @@ $PageComments
 
 	<% if Quicklinks %>
 	<div class="link-set pure-u-1 pure-u-md-1-5">
-		<h3><i class="icon-link" aria-hidden="true"></i> Quicklinks</h3>
+		<h3><i class="icon-earth" aria-hidden="true"></i> Quicklinks</h3>
 		<ul>
 			<% loop Quicklinks %>
 				<li class="$EvenOdd $FirstLast"><a href="$Link" class="$FirstLast">$Name</a></li>
@@ -23,7 +23,7 @@ $PageComments
 
 	<% if NewsItems %>
 	<div class="pure-u-1 <% if not Quicklinks %>pure-u-md-1-2<% else %>pure-u-md-2-5<% end_if %> results-list">
-		<h3><i class="icon-layout" aria-hidden="true"></i> <a href="$NewsPage.Link">$NewsPage.Title</a></h3>
+		<h3><a href="$NewsPage.Link"> <i class="icon-radio-waves" aria-hidden="true"></i> $NewsPage.Title</a></h3>
 		<% loop getNewsItems(3) %>
 			<article class="$EvenOdd $FirstLast item">
 				<% include NewsItem %>

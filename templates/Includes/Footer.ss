@@ -3,7 +3,7 @@
 		<h2 class="nonvisual-indicator">Footer</h2>
 		<div class="pure-g">
 			<% if Footer %> 
-			<div class="pure-u-1<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %> pure-u-md-1-2<% end_if %>">
+			<div class="pure-u-1<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %> pure-u-md-2-3<% end_if %>">
 				<ul class="nav-pills">
 					<% with Footer %>
 						<% loop Children %>
@@ -19,15 +19,13 @@
 			<% end_if %>
 
 			<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %>
-			<div class="social-links pure-u-1 <% if not Footer %> pure-u-md-1-2<% end_if %>" role="complementary">
-				<p>
-					<% if SiteConfig.TwitterUsername %>
-						<a class="meta-data" href="http://www.twitter.com/$SiteConfig.TwitterUsername"><i class="icon-twitter icon-dark" aria-hidden="true"></i>Follow us on Twitter</a>
-					<% end_if %>
-					<% if SiteConfig.FacebookURL %>
-						<a class="meta-data" href="http://www.facebook.com/$SiteConfig.FacebookURL"><i class="icon-facebook icon-dark" aria-hidden="true"></i>Join us on Facebook</a>
-					<% end_if %>
-				</p>
+			<div class="social-links pure-u-1 <% if Footer %> pure-u-md-1-3<% end_if %>" role="complementary">
+				<% if SiteConfig.TwitterUsername %>
+					<a class="meta-data" href="http://www.twitter.com/$SiteConfig.TwitterUsername"><i class="icon-social-twitter" aria-hidden="true"></i>Follow us on Twitter</a>
+				<% end_if %>
+				<% if SiteConfig.FacebookURL %>
+					<a class="meta-data" href="http://www.facebook.com/$SiteConfig.FacebookURL"><i class="icon-social-facebook" aria-hidden="true"></i>Join us on Facebook</a>
+				<% end_if %>
 			</div>
 			<% end_if %>
 		</div>
