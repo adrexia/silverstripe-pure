@@ -1,4 +1,5 @@
 .pure-paginator {
+	display: inline;
 	.pure-button{
 		height: 2.5em;
 	}
@@ -8,11 +9,12 @@
 		&.disabled {
 			color: #C0C1C3;
 		}
-		&:hover {
-			color: $link-hover-color;
-		}
 	}
+}
 
+.pagination {
+	text-align: center;
+	margin-top: 20px;
 }
 
 
