@@ -3,11 +3,11 @@
 	<% if $AvailableTranslations %>
 	<div class="pure-g">
 		<div class="pure-u-1">
-			<h2 class="nonvisual-indicator">Language Selector</h2>
-			<ul id="lang" class="translations nav-pills">
+			<h2 class="accessibility-nonvisual-indicator">Language Selector</h2>
+			<ul id="lang" class="translations inline-list">
 				<% loop $AvailableTranslations %>
 					<li>
-						<a href="$Link" lang="$LangName" hreflang="$LangName" class="<% if Current %>current  pure-button pure-button-pill<% end_if %>">
+						<a href="$Link" lang="$LangName" hreflang="$LangName" class="<% if Current %>current  pure-button pure-button-default pure-button-pill<% end_if %>">
 							$LangName
 						</a>
 					</li>

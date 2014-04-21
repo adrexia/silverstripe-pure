@@ -2,7 +2,7 @@
 	<% cached 'menu2', ID, List(Page).max(LastEdited) %>
 	<div class="pure-u-1 pure-u-md-1-4">
 		<nav class="secondary-menu pure-menu pure-menu-open menu-plain" id="page-nav" role="navigation">
-			<h2 class="nonvisual-indicator">Secondary Navigation</h2>
+			<h2 class="accessibility-nonvisual-indicator">Secondary Navigation</h2>
 			<ul class="">
 				<% loop Menu(2) %>
 					<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %><% if $First %> first<% end_if %><% if $Last %> last<% end_if %>">

@@ -1,6 +1,6 @@
 <% if MoreThanOnePage %>
 <div id="PageNumbers" class="pagination">
-	<h3 class="nonvisual-indicator">Results</h3>
+	<h3 class="accessibility-nonvisual-indicator">Results</h3>
 	<ul class="pure-paginator">
 		<li>
 			<% if $NotFirstPage %>

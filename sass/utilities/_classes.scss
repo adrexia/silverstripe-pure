@@ -1,11 +1,32 @@
 // vertically align stuff
 .valign {
-  display: table;
-  width: 100%;
-  .center {
-    display: table-cell;
-    vertical-align: middle;
-  }​
-  > article {
-  }
+	display: table;
+	width: 100%;
+	.center {
+		display: table-cell;
+		vertical-align: middle;
+	}​
+	> article {
+	}
+}
+
+// Add generic pull-directions
+.pull-right{
+	float: right;
+}
+.pull-left{
+	float: left;
+}
+
+.clearfix{
+	clear:both;
+}
+
+iframe {
+	border: 0;
+}
+
+// Generic style for meta data
+.meta-data{
+	font-size: $base-font-size - 3;
 }

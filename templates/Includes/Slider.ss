@@ -1,5 +1,5 @@
 <% if VisibleCarouselItems %>
-<h2 class="nonvisual-indicator">Image slider, use keyboard to navigate</h2>
+<h2 class="accessibility-nonvisual-indicator">Image slider, uses keyboard to navigate</h2>
 <div class="slider-wrap flexslider">
 	<ul class="slides">
 		<% loop VisibleCarouselItems %>

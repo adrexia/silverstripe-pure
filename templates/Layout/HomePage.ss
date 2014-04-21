@@ -6,8 +6,7 @@
 $Form
 $PageComments
 
-<!-- Example row of columns -->
-<h2 class="nonvisual-indicator">Features</h2>
+<h2 class="accessibility-nonvisual-indicator">Features</h2>
 <div class="pure-g pure-g-padding">
 
 	<% if Quicklinks %>

@@ -1,5 +1,7 @@
+// Import brand variables (colours, fonts, et al)
+@import "brand";
 
-// These are the global variables used across your site
+// This file is for the global variables used across your site
 
 
 // Environment variables. Note some projects put all css into assets,
@@ -14,6 +16,8 @@ $font-family: 'Nobile', helvetica, arial, sans-serif;
 $header-font-family: 'Lobster Two', helvetica, arial, sans-serif;
 
 // Theme colors
+$primary-brand-color: $brand-purple;
+
 $default-color: #f2f2f2;
 $primary-color: rgb(0, 120, 231);
 $secondary-color: rgb(66, 184, 221);
@@ -27,22 +31,21 @@ $link-color: darken($secondary-color, 20%);
 $link-hover-color: lighten($link-color, 10%);
 $link-visited-color: darken($link-color, 10%);
 
-
-
 // Radius
 $button-radius: 3px;
 
 // Menu bar
-$menu-color: darken($error-color, 5%); //#8058A5; - purple theme
+$menu-color: $primary-brand-color; 
 $menu-link-color: #fff;
 $menu-link-hover-color: #fff;
-$menu-link-hover-background-color: darken($menu-color, 15%);
+$menu-link-hover-background-color: darken($primary-brand-color, 15%);
 
 // Footer 
 $footer-color: $menu-color;
 $footer-link-color: $menu-link-color;
 $footer-link-hover-color: $menu-link-hover-color;
 $footer-link-hover-background-color: $menu-link-hover-background-color;
+
 
 // Tables
 $table-header-font-family: $font-family;
@@ -58,3 +61,5 @@ $table-cell-border-style:  solid;
 
 // Max page width (applied to container elements)
 $container-width: 1200px;
+
+

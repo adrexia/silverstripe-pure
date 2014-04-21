@@ -1,4 +1,4 @@
-<footer class="pure-g pure-g-padding">
+<footer class="pure-g">
 	<div class="pure-u-1">
 	<% if $ClassName == EventPage %>
 		<p class="pull-left"><a href="$Parent.Link">←  Back to the event listing</a></p>

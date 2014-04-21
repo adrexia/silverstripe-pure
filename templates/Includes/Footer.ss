@@ -1,10 +1,10 @@
 <footer class="footer typography" role="contentinfo">
 	<div class="container">
-		<h2 class="nonvisual-indicator">Footer</h2>
+		<h2 class="accessibility-nonvisual-indicator">Footer</h2>
 		<div class="pure-g">
 			<% if Footer %> 
 			<div class="pure-u-1<% if SiteConfig.FacebookURL || SiteConfig.TwitterUsername %> pure-u-md-2-3<% end_if %>">
-				<ul class="nav-pills">
+				<ul class="inline-list">
 					<% with Footer %>
 						<% loop Children %>
 							<li class="$LinkingMode<% if $LinkingMode = current %> active<% end_if %>">

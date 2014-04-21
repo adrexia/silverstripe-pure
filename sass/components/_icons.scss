@@ -13,6 +13,21 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+// Helper classes to customise icons
+.icon-dark{
+	color: $body-font-color;
+	&:visited{
+		color: $body-font-color;
+	}
+	&:hover{
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+.icon-small{
+	font-size:1em;
+}
+
 .icon-alert-circled:before {
 	content: "\f100";
 }

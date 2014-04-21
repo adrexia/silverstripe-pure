@@ -2,7 +2,7 @@
 <div class="pure-g pure-g-padding">
 	<div class="pure-u-1 pure-u-md-1-4">
 		<div class="filter update-information">
-			<h2 class="nonvisual-indicator">Event information</h2>
+			<h2 class="accessibility-nonvisual-indicator">Event information</h2>
 			<% include UpdateInfo %>
 		</div>
 	</div>

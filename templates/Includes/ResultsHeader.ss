@@ -1,7 +1,7 @@
 <div class="results-header">
 	<p class="subtitle pull-left">
 		<% if FilterDescription %>
-		$FilterDescription
+			$FilterDescription
 		<% else %>
 			<% if Top.ClassName == EventHolder %>
 				Upcoming events

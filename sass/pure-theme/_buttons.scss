@@ -4,6 +4,14 @@
 	color: $body-font-color;
 	padding: 0.4em 1em;
 
+	&.pure-button-default{
+		border: 1px solid darken($default-color, 3%);
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+		&:hover {
+			color: $body-font-color;
+		}
+	}
+
 	&.pure-button-success,
 	&.pure-button-error,
 	&.pure-button-warning,
@@ -53,4 +61,13 @@
 .pure-button-pill {
 	border-radius: 40px;
 	padding: 0.3em 1em;
+}
+
+h1, h2, h3{
+	a.pure-button-with-heading{
+		margin-left: 20px;
+		font-size: 15px;
+		line-height: 1em;
+		vertical-align: middle;
+	}
 }

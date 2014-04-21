@@ -6,7 +6,14 @@
 	</div>
 	<div class="pure-u-1 pure-u-md-3-4">
 		<div id="main" class="results-list typography" role="main">
-			<h1 class="page-header">$Title</h1>
+			<h1 class="page-header">$Title
+			<% if FilterDescription %>
+				<a class="pure-button pure-button-default pure-button-with-heading" href="$Link" role="button">
+					<i class="icon-close"></i> 
+					Remove filter
+				</a>
+			<% end_if %>
+			</h1>
 
 			<div class="content">
 				$Content.RichLinks

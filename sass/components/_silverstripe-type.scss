@@ -11,6 +11,10 @@
 }
 
 img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+
 	&.right {
 		float:right;
 		clear:right;
@@ -35,25 +39,27 @@ img{
 }
 
 /* Media insert formatting  (Youtube embed) */
-.media.center{
-	margin:0 auto;
-	text-align:center;
-}
-.media.left{
-	float:left;
-	clear:left;
-	margin: 0 18px 18px 0px;
-}
-.media.leftAlone{
-	margin: 0 18px 18px 0;
-	float: none;
-	display: block;
-	clear: both;
-}
-.media.right{
-	float:right;
-	clear:right;
-	margin: 0 0 18px 18px;
+.media {
+	&.center{
+		margin:0 auto;
+		text-align:center;
+	}
+	&.left{
+		float:left;
+		clear:left;
+		margin: 0 18px 18px 0px;
+	}
+	&.leftAlone{
+		margin: 0 18px 18px 0;
+		float: none;
+		display: block;
+		clear: both;
+	}
+	&.right{
+		float:right;
+		clear:right;
+		margin: 0 0 18px 18px;
+	}
 }
 
 figure.featured-image {
@@ -100,13 +106,13 @@ figure.featured-image {
 	p {
 		clear: both;
 		margin: 0px 0 40px 60px;
-		color:#ccc;
-		padding-top:15px;
-		font-weight:normal;
-		font-family:$font-family;
-		font-size:16px;
-		line-height:22px;
-		padding-bottom:2px;
+		color: #ccc;
+		padding-top: 15px;
+		font-weight: normal;
+		font-family: $font-family;
+		font-size: 16px;
+		line-height: 22px;
+		padding-bottom: 2px;
 		@include respond(sm){
 			text-align: center;
 			margin: 0px 20px 40px 20px;
@@ -114,7 +120,7 @@ figure.featured-image {
 	}
 	img {
 		margin: 0 0 5px 0;
-		border:0;
+		border: 0;
 	}
 }
 
