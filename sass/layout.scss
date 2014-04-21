@@ -19,6 +19,6 @@
 // To keep this file up-to-date, you can use: grunt build-components
 @import "components/all";
 
-
-// Include custom css file
+// Include custom css file and shame file
 @import "custom";
+@import "shame";
