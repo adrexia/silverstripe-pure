@@ -1,5 +1,5 @@
 /*
- * Styles for header elements
+ * Styles for header brand element
  */
 .brand {
 	margin: 0;
@@ -10,16 +10,13 @@
 		display: block;
 		float: left;
 		font-size: 72px;
-		line-height:1em;
-		margin-bottom: 0;
-		margin-top: 0;
+		margin: 0;
 		overflow:visible;
-		padding-bottom: 18px;
 		position: relative;
 
 		img {
 			position: absolute;
-			top: 0px;
+			top: -20px;
 			left: 0px;
 		}
 

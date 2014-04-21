@@ -22,6 +22,6 @@
 </div>
 <% if FeaturedImage %>
 	<figure class="featured-image">
-		$FeaturedImage.SetSize(150, 120)
+		$FeaturedImage.SetSize(200, 120)
 	</figure>
 <% end_if %>
