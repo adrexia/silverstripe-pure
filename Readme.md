@@ -24,13 +24,13 @@ There are a couple of fonts supplied, but they are intended to act as examples o
 * All pages work with pure grid
 * Generic Page
 * Homepage
+* NewsHolderPage
+* EventsHolderPage
+* EventsPage
+* NewsPage
 
 ### TODO
 
-* EventsHolderPage
-* NewsHolderPage
-* EventsPage
-* NewsPage
 * Registry Page
 * SitemapPage
 * Search Results Page
@@ -50,7 +50,7 @@ _With different brand colours set_
 | Teal        | Purple           |
 | ------------- |:-------------:| 
 | ![](images/pure-teal.png)      | ![](images/pure-purple.png) | 
-|  **Blue**     | **Pink** | 
-| ![](images/pure-blue.png)      | ![](images/pure-pink.png)     | 
+|  **Pink**     | **Blue** | 
+|   ![](images/pure-pink.png)     | ![](images/pure-blue.png)    | 
 
 
