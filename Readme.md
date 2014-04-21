@@ -40,17 +40,17 @@ There are a couple of fonts supplied, but they are intended to act as examples o
 ## How to use
 Coming soon
 
-## Screenshot
+## Screenshots
 _HomePage_
 
 ![](images/pure-wip.png)
 
 _With different brand colours set_
 
-![](images/pure-teal.png)
+| Teal        | Purple           |
+| ------------- |:-------------:| 
+| ![](images/pure-teal.png)      | ![](images/pure-purple.png) | 
+|  **Blue**     | **Pink** | 
+| ![](images/pure-blue.png)      | ![](images/pure-pink.png)     | 
 
-![](images/pure-purple.png)
 
-![](images/pure-blue.png)
-
-![](images/pure-pink.png)
