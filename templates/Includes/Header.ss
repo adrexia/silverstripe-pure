@@ -32,7 +32,11 @@
 			<% end_if %>
 		</<% if ClassName=="HomePage" %>h1<% else %>div<% end_if %>>
 		<div class="search-group pure-u-1 pure-u-md-1-3">
+	
 			$SearchForm
+			<a href="#menu" class="menu-trigger">
+				<i class="icon-navicon-round"></i>
+			</a>
 		</div>
 	</div>
 </header>

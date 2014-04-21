@@ -1,5 +1,7 @@
+
 <div class="pure-g">
-	<nav id="navbar" class="menu-default pure-menu pure-menu-open pure-menu-horizontal pure-u-1-1" role="navigation">
+	<nav id="navbar" class="menu-default pure-menu pure-menu-open pure-menu-horizontal pure-u-1" role="navigation">
+
 		<h2 class="accessibility-nonvisual-indicator">Main navigation</h2>
 		<ul class="">
 			<% loop Menu(1) %>
