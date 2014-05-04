@@ -1,9 +1,12 @@
 .pure-menu {
 	&.menu-default {
-		background: $menu-color;
-		padding: 8px 10px;
-		border-radius: 3px;
-		font-size: $base-font-size + 2;
+		ul {
+			background: $menu-color;
+			padding: 8px 10px;
+			border-radius: 3px;
+			font-size: $base-font-size + 2;
+			width: 100%;
+		}
 		a {
 			color: $menu-link-color;
 			&:hover, &:focus, &.pure-menu-selected{
