@@ -1,5 +1,5 @@
 {
-    "name": "nguyer/silverstripe-pure",
+    "name": "adrexia/silverstripe-pure",
     "description": "A Pure theme for silverstripe",
     "type": "silverstripe-theme",
     "require": {
