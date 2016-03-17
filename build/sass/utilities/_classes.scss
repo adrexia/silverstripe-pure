@@ -1,0 +1,57 @@
+// vertically align stuff
+.valign {
+	display: table;
+	width: 100%;
+	.center {
+		display: table-cell;
+		vertical-align: middle;
+	}​
+	> article {
+	}
+}
+
+// Add generic pull-directions
+.pull-right{
+	float: right;
+}
+
+.pull-left{
+	float: left;
+}
+
+.clearfix {
+	clear:both;
+}
+
+iframe {
+	border: 0;
+}
+
+// Generic style for meta data
+.meta-data{
+	font-size: $base-font-size - 3;
+}
+
+/**
+ * Screen reader helper classes
+ */
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	clip: auto;
+}

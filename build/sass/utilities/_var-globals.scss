@@ -1,0 +1,63 @@
+// Import brand variables (colours, fonts, et al)
+@import "var-brand";
+
+// This file is for the global variables used across your site
+
+
+// Environment variables. Note some projects put all css into assets,
+// so the path needs to be able to find the css from there
+$theme-name: 'pure-theme';
+$file-path: "../../../themes/"+$theme-name;
+
+
+$base-font-size: 15px;
+
+$font-family: 'Nobile', helvetica, arial, sans-serif;
+$header-font-family: 'Lobster Two', helvetica, arial, sans-serif;
+
+// Theme colors
+$primary-brand-color: $brand-red;
+
+$default-color: #f2f2f2;
+$primary-color: rgb(0, 120, 231);
+$secondary-color: rgb(66, 184, 221);
+$success-color: rgb(28, 184, 65);
+$error-color: rgb(202, 60, 60);
+$warning-color: rgb(223, 117, 20);
+
+$body-font-color: #333;
+
+$link-color: darken($secondary-color, 20%);
+$link-hover-color: lighten($link-color, 10%);
+$link-visited-color: darken($link-color, 10%);
+
+// Radius
+$button-radius: 3px;
+
+// Menu bar
+$menu-color: $primary-brand-color;
+$menu-link-color: #fff;
+$menu-link-hover-color: #fff;
+$menu-link-hover-background-color: darken($primary-brand-color, 15%);
+
+// Footer
+$footer-color: $menu-color;
+$footer-link-color: $menu-link-color;
+$footer-link-hover-color: $menu-link-hover-color;
+$footer-link-hover-background-color: $menu-link-hover-background-color;
+
+
+// Tables
+$table-header-font-family: $font-family;
+$table-bgcolor:  #fff;
+$table-thead-color:  $body-font-color;
+$table-thead-bgcolor:  $default-color;
+$table-border-size:  1px;
+$table-border-style:  solid;
+$table-border-color:  #e5e5e5;
+$table-cell-border-size:  1px;
+$table-cell-border-color:  #e5e5e5;
+$table-cell-border-style:  solid;
+
+// Max page width (applied to container elements)
+$container-width: 1200px;

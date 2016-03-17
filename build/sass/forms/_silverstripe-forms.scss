@@ -1,0 +1,56 @@
+/*
+* For Silverstripe specific styling (e.g. to get forms to work as intended)
+*/
+
+
+/*
+ * Forms
+ */
+
+form {
+	@extend .pure-form;
+	input.text {
+		padding-top: 7px;
+	}
+	label {
+		line-height: 3em;
+	}
+	div.field{
+		margin-bottom:10px;
+	}
+}
+
+
+.pure-button {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		-webkit-appearance: none;
+		display: block;
+		background: none;
+		border: none;
+		color: inherit;
+	}
+}
+
+.Actions .btn {
+	float: left;
+	margin-right: 20px;
+}
+
+form {
+	clear: fix;
+}
+
+.fieldset { //Silverstripe uses fieldsets wrongly, so don't style with default
+	border: none;
+}
+
+#ForgotPassword { //ID only used because silverstripe does not provide a class
+	clear: fix;
+	float: left;
+	font-size: 0.8em;
+	line-height: 35px;
+	padding-left: 20px;
+}
