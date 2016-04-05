@@ -788,6 +788,15 @@
   .pure-button.pure-button-success, .pure-button.pure-button-error, .pure-button.pure-button-warning, .pure-button.pure-button-secondary, .pure-button.pure-button-primary {
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  .pure-button button,
+  .pure-button input[type="button"],
+  .pure-button input[type="reset"],
+  .pure-button input[type="submit"] {
+    -webkit-appearance: none;
+    display: block;
+    background: none;
+    border: none;
+    color: inherit; }
 
 .pure-button-primary {
   background: #0078e7; }
@@ -887,7 +896,7 @@ h1 a.pure-button-with-heading, .brand a a.pure-button-with-heading, h2 a.pure-bu
   .menu-trigger:hover, .menu-trigger:focus, .menu-trigger.active {
     background: #ba3333;
     color: #fff; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 480px) {
     .menu-trigger {
       display: none; } }
 
@@ -1101,7 +1110,7 @@ figure.featured-image img {
     margin: 0 auto 40px; }
     .captionImage.center p, figure.featured-image.center p {
       margin: 0px 20px 40px 20px; }
-  @media screen and (min-width: 35.5em) {
+  @media screen and (max-width: 750px) {
     .captionImage.left, .captionImage.right, .captionImage.leftAlone, .captionImage.center, figure.featured-image.left, figure.featured-image.right, figure.featured-image.leftAlone, figure.featured-image.center {
       margin-bottom: 40px;
       margin-top: 10px; }
@@ -1118,7 +1127,7 @@ figure.featured-image img {
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 2px; }
-    @media screen and (min-width: 35.5em) {
+    @media screen and (max-width: 750px) {
       .captionImage p, figure.featured-image p {
         text-align: center;
         margin: 0px 20px 40px 20px; } }
@@ -1302,9 +1311,6 @@ ol.breadcrumb {
     padding: 10px 30px; }
   .hero-unit .content p {
     font-size: 18px; }
-    @media screen and (max-width: 860px) {
-      .hero-unit .content p {
-        font-size: 15px; } }
 
 .link-set ul, .link-set ol {
   margin: 0;
@@ -1314,6 +1320,222 @@ ol.breadcrumb {
     display: block;
     padding: 5px 0; }
 
+/*
+ * Styling for results
+ */
+.results-header:after{
+  content: '';
+  display: table;
+  clear: both; }
+.results-header {
+  padding: 7px 10px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  background: #f2f2f2; }
+  .results-header p {
+    margin: 0; }
+
+.results-list .results {
+  list-style: none; }
+
+.results-list .item.even:after{
+  content: '';
+  display: table;
+  clear: both; }
+
+.results-list .item.even {
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  clear: both;
+  margin-bottom: 10px;
+  padding-top: 10px; }
+
+.results-list .abstract {
+  float: left; }
+  .results-list .abstract.has-image {
+    width: 70%; }
+
+.results-list figure.featured-image {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 10px;
+  width: 30%; }
+
+.results-list h4 {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.results-actions {
+  clear: both; }
+  .results-actions a {
+    display: inline-block; }
+
+/* Customise search field */
+.search-group:after{
+  content: '';
+  display: table;
+  clear: both; }
+  .search-group .search-query {
+    box-sizing: border-box;
+    float: left;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0.6em 1em;
+    width: 70%;
+    color: #333;
+    -webkit-appearance: textfield; }
+    @media screen and (min-width: 480px) {
+      .search-group .search-query {
+        float: none;
+        width: 200px; } }
+  .search-group .pure-button {
+    float: left;
+    max-width: 30%;
+    border-radius: 0 3px 3px 0;
+    display: inline-block;
+    height: 40px;
+    line-height: normal;
+    margin-left: -7px; }
+    @media screen and (min-width: 480px) {
+      .search-group .pure-button {
+        float: none;
+        max-width: none; } }
+    .search-group .pure-button input {
+      display: block;
+      width: 100%;
+      height: 100%;
+      vertical-align: baseline; }
+  .search-group form {
+    float: left;
+    padding: 0px 20px 0;
+    width: 80%; }
+    @media screen and (min-width: 750px) {
+      .search-group form {
+        float: none;
+        padding: 30px 0px 0;
+        width: auto; } }
+  .search-group fieldset {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0; }
+
+ul.sitemap {
+  border-bottom: 1px solid #e5e5e5;
+  list-style-type: none;
+  margin-left: 0; }
+  .no-js ul.sitemap .collapse {
+    height: auto; }
+  .ie9 ul.sitemap .open .collapse {
+    height: auto; }
+    .ie9 ul.sitemap .open .collapse .page-toggle {
+      display: none; }
+  ul.sitemap .page-toggle {
+    text-indent: 0;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px; }
+    ul.sitemap .page-toggle .button {
+      padding-left: 15px;
+      display: block; }
+      ul.sitemap .page-toggle .button:hover, ul.sitemap .page-toggle .button:focus {
+        text-decoration: none; }
+      ul.sitemap .page-toggle .button .linkText {
+        height: 0;
+        overflow: hidden;
+        padding-top: 20px;
+        display: block;
+        position: absolute;
+        width: 20px; }
+      ul.sitemap .page-toggle .button .toggleIco {
+        font-size: 12px; }
+      ul.sitemap .page-toggle .button.loading .toggleIco {
+        background: url(../../../themes/pure-theme/images/ajax-loader.gif) center bottom no-repeat;
+        display: block;
+        height: 27px;
+        width: 15px; }
+        ul.sitemap .page-toggle .button.loading .toggleIco:before {
+          display: none; }
+  ul.sitemap li {
+    background: #f2f2f2;
+    border-top: 1px solid #e5e5e5;
+    z-index: 0;
+    position: relative;
+    line-height: 40px;
+    margin-bottom: 0; }
+    ul.sitemap li a.sitemap-link {
+      box-sizing: border-box;
+      display: block;
+      height: 100%;
+      padding-left: 30px;
+      z-index: 1; }
+      ul.sitemap li a.sitemap-link:hover {
+        text-decoration: none;
+        background-color: #e5e5e5; }
+      ul.sitemap li a.sitemap-link img {
+        border: none;
+        margin: 0; }
+      ul.sitemap li a.sitemap-link .sitetree-icon {
+        margin: 0 10px 0 15px; }
+    ul.sitemap li .collapse {
+      display: none; }
+    ul.sitemap li .collapsed {
+      display: block; }
+    ul.sitemap li .collapse a,
+    ul.sitemap li .collapse .page-toggle a.button {
+      display: none; }
+    ul.sitemap li ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      height: auto; }
+      ul.sitemap li ul li {
+        text-indent: 15px; }
+        ul.sitemap li ul li .page-toggle {
+          padding-left: 20px; }
+        ul.sitemap li ul li li {
+          background: none;
+          border: none;
+          text-indent: 25px; }
+          ul.sitemap li ul li li.first, ul.sitemap li ul li li.last {
+            border: none; }
+          ul.sitemap li ul li li .page-toggle {
+            padding-left: 30px; }
+          ul.sitemap li ul li li li {
+            text-indent: 45px; }
+            ul.sitemap li ul li li li .page-toggle {
+              padding-left: 40px; }
+            ul.sitemap li ul li li li li {
+              text-indent: 60px; }
+              ul.sitemap li ul li li li li .page-toggle {
+                padding-left: 50px; }
+              ul.sitemap li ul li li li li li {
+                text-indent: 75px;
+                background-color: rgba(242, 242, 242, 0.2); }
+                ul.sitemap li ul li li li li li .page-toggle {
+                  padding-left: 60px; }
+                ul.sitemap li ul li li li li li.first {
+                  border-top: #f2f2f2;
+                  border-top: 2px solid rgba(242, 242, 242, 0.5); }
+                ul.sitemap li ul li li li li li.last {
+                  border-bottom: 2px solid rgba(242, 242, 242, 0.5); }
+                ul.sitemap li ul li li li li li .in li {
+                  border: none; }
+                ul.sitemap li ul li li li li li li {
+                  background: none;
+                  border: none; }
+                  ul.sitemap li ul li li li li li li.last, ul.sitemap li ul li li li li li li.first {
+                    border: none; }
+
+/**
+ * Component stub. Actual slider left as a technology choice for the developer
+ */
 .slider-wrap .slides {
   padding-left: 0; }
   .slider-wrap .slides li {
@@ -1398,282 +1620,25 @@ ol.breadcrumb {
 .footer-copyright {
   padding-left: 10px; }
 
-/*
- * Styling for results
+/**
+ * For Silverstripe specific styling (to get forms to work as intended)
+ * Note: This file should not be used as an example of how to structure css - its
+ * just a work around for forms in silverstripe. Remove if/what you can.
  */
-.results-header:after{
-  content: '';
-  display: table;
-  clear: both; }
-.results-header {
-  padding: 7px 10px;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 20px;
-  background: #f2f2f2; }
-  .results-header p {
-    margin: 0; }
-
-.results-list .item.even:after{
-  content: '';
-  display: table;
-  clear: both; }
-
-.results-list .item.even {
-  border-bottom: 1px solid #f2f2f2;
-  border-top: 1px solid #f2f2f2;
-  clear: both;
-  margin-bottom: 10px;
-  padding-top: 10px; }
-
-.results-list .abstract {
-  float: left; }
-  .results-list .abstract.has-image {
-    width: 70%; }
-
-.results-list figure.featured-image {
-  box-sizing: border-box;
-  float: left;
-  padding-left: 10px;
-  width: 30%; }
-
-.results-list .results {
-  list-style: none; }
-
-.results-list h4 {
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 0; }
-
-.results-actions {
-  clear: both; }
-  .results-actions a {
-    display: inline-block; }
-
-/* Customise search field */
-.search-group:after{
-  content: '';
-  display: table;
-  clear: both; }
-  .search-group form {
-    float: left;
-    padding: 0px 20px 0;
-    width: 80%; }
-    @media screen and (min-width: 64em) {
-      .search-group form {
-        float: none;
-        padding: 30px 0px 0;
-        width: auto; } }
-    .ie8 .search-group form {
-      float: none;
-      padding: 30px 0px 0;
-      width: auto; }
-  .search-group .search-query {
-    box-sizing: border-box;
-    float: left;
-    vertical-align: top;
-    display: inline-block;
-    padding: 0.6em 1em;
-    width: 70%;
-    color: #333;
-    -webkit-appearance: textfield; }
-    @media screen and (min-width: 48em) {
-      .search-group .search-query {
-        float: none;
-        width: 200px; } }
-    .ie8 .search-group .search-query {
-      float: none;
-      width: 200px; }
-  .search-group .pure-button {
-    float: left;
-    max-width: 30%;
-    border-radius: 0 3px 3px 0;
-    display: inline-block;
-    height: 40px;
-    line-height: normal;
-    margin-left: -7px; }
-    @media screen and (min-width: 48em) {
-      .search-group .pure-button {
-        float: none;
-        max-width: none; } }
-    .ie8 .search-group .pure-button {
-      float: none;
-      width: auto; }
-    .search-group .pure-button input {
-      display: block;
-      width: 100%;
-      height: 100%;
-      vertical-align: baseline; }
-  .search-group fieldset {
-    text-align: right;
-    padding-left: 0;
-    padding-right: 0;
-    border: 0; }
-
-ul.sitemap {
-  border-bottom: 1px solid #e5e5e5;
-  list-style-type: none;
-  margin-left: 0; }
-  .no-js ul.sitemap .collapse {
-    height: auto; }
-  .IE9 ul.sitemap .open .collapse {
-    height: auto; }
-    .IE9 ul.sitemap .open .collapse .page-toggle {
-      display: none; }
-  ul.sitemap .page-toggle {
-    text-indent: 0;
-    left: 0px;
-    top: 0px;
-    z-index: 5;
-    position: absolute;
-    display: inline-block;
-    width: 40px;
-    height: 40px; }
-    ul.sitemap .page-toggle .button {
-      padding-left: 15px;
-      display: block;
-      height: 40px;
-      /* for early i.e. */ }
-      ul.sitemap .page-toggle .button:hover, ul.sitemap .page-toggle .button:focus {
-        text-decoration: none; }
-      ul.sitemap .page-toggle .button .linkText {
-        height: 0;
-        overflow: hidden;
-        padding-top: 20px;
-        display: block;
-        position: absolute;
-        width: 20px; }
-      ul.sitemap .page-toggle .button .toggleIco {
-        font-size: 12px; }
-      ul.sitemap .page-toggle .button.loading .toggleIco {
-        background: url(../../../themes/pure-theme/images/ajax-loader.gif) center bottom no-repeat;
-        display: block;
-        height: 27px;
-        width: 15px; }
-        ul.sitemap .page-toggle .button.loading .toggleIco:before {
-          display: none; }
-  ul.sitemap li {
-    background: #f2f2f2;
-    border-top: 1px solid #e5e5e5;
-    z-index: 0;
-    position: relative;
-    line-height: 40px;
-    margin-bottom: 0; }
-    ul.sitemap li a.sitemap-link {
-      box-sizing: border-box;
-      display: block;
-      height: 100%;
-      padding-left: 30px;
-      z-index: 1; }
-      ul.sitemap li a.sitemap-link:hover {
-        text-decoration: none;
-        background-color: #e5e5e5; }
-      ul.sitemap li a.sitemap-link img {
-        border: none;
-        margin: 0; }
-      ul.sitemap li a.sitemap-link .sitetree-icon {
-        margin: 0 10px 0 15px; }
-    ul.sitemap li ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      height: auto; }
-      ul.sitemap li ul li {
-        text-indent: 15px; }
-        ul.sitemap li ul li .page-toggle {
-          padding-left: 20px; }
-        ul.sitemap li ul li li {
-          background: none;
-          border: none;
-          text-indent: 25px; }
-          ul.sitemap li ul li li.first, ul.sitemap li ul li li.last {
-            border: none; }
-          ul.sitemap li ul li li .page-toggle {
-            padding-left: 30px; }
-          ul.sitemap li ul li li li {
-            text-indent: 45px; }
-            ul.sitemap li ul li li li .page-toggle {
-              padding-left: 40px; }
-            ul.sitemap li ul li li li li {
-              text-indent: 60px; }
-              ul.sitemap li ul li li li li .page-toggle {
-                padding-left: 50px; }
-              ul.sitemap li ul li li li li li {
-                text-indent: 75px; }
-                ul.sitemap li ul li li li li li .page-toggle {
-                  padding-left: 60px; }
-                ul.sitemap li ul li li li li li li {
-                  text-indent: 90px; }
-                  ul.sitemap li ul li li li li li li .page-toggle {
-                    padding-left: 70px; }
-                  ul.sitemap li ul li li li li li li li {
-                    text-indent: 105px; }
-                    ul.sitemap li ul li li li li li li li .page-toggle {
-                      padding-left: 80px; }
-                    ul.sitemap li ul li li li li li li li li {
-                      text-indent: 120px;
-                      background-color: rgba(242, 242, 242, 0.2); }
-                      ul.sitemap li ul li li li li li li li li .page-toggle {
-                        padding-left: 90px; }
-                      #IE9 ul.sitemap li ul li li li li li li li li {
-                        background: none; }
-                        #IE9 ul.sitemap li ul li li li li li li li li.first, #IE9 ul.sitemap li ul li li li li li li li li.last {
-                          border: none; }
-                      ul.sitemap li ul li li li li li li li li.first {
-                        border-top: #f2f2f2;
-                        border-top: 2px solid rgba(242, 242, 242, 0.5); }
-                      ul.sitemap li ul li li li li li li li li.last {
-                        border-bottom: 2px solid rgba(242, 242, 242, 0.5); }
-                      ul.sitemap li ul li li li li li li li li .in li {
-                        border: none; }
-                      ul.sitemap li ul li li li li li li li li li {
-                        background: none;
-                        border: none; }
-                        #IE9 ul.sitemap li ul li li li li li li li li li {
-                          padding-left: 10px; }
-                        ul.sitemap li ul li li li li li li li li li.last, ul.sitemap li ul li li li li li li li li li.first {
-                          border: none; }
-    ul.sitemap li div.collapse {
-      display: none; }
-    ul.sitemap li div.collapsed {
-      display: block; }
-    ul.sitemap li div.collapse a,
-    ul.sitemap li div.collapse .page-toggle a.button {
-      display: none; }
-
-/*
-* For Silverstripe specific styling (e.g. to get forms to work as intended)
-*/
-/*
- * Forms
- */
-form input.text {
-  padding-top: 7px; }
-
-form label {
-  line-height: 3em; }
-
-form div.field {
-  margin-bottom: 10px; }
-
-.pure-button button,
-.pure-button input[type="button"],
-.pure-button input[type="reset"],
-.pure-button input[type="submit"] {
-  -webkit-appearance: none;
-  display: block;
-  background: none;
-  border: none;
-  color: inherit; }
-
-.Actions .btn {
-  float: left;
-  margin-right: 20px; }
-
 form:after{
   content: '';
   display: table;
   clear: both; }
+  form input.text {
+    padding-top: 7px; }
+  form label {
+    line-height: 3em; }
+  form div.field {
+    margin-bottom: 10px; }
+
+.Actions .btn {
+  float: left;
+  margin-right: 20px; }
 
 .fieldset {
   border: none; }

@@ -155,11 +155,10 @@ gulp.task('make-js-lib', function() {
 });
 
 
-gulp.task('watch', ['pure', 'browserSync', 'make-css', 'minify-css', 'cms-css', 'make-js', 'kss'], function () {
-	gulp.watch('build/sass/**/*.scss', ['make-css', 'minify-css', 'cms-css', 'kss', browserSync.reload]); //watch sass in project sass folder, run tasks
-	gulp.watch('build/js/*.js', ['make-js', browserSync.reload]);  //watch js in project js folder, run tasks
-	gulp.watch('build/modules/lib/*.js', ['make-js-lib', browserSync.reload]);  //watch js in project modules folder, run tasks
+gulp.task('watch', ['pure', 'make-css', 'minify-css', 'cms-css', 'make-js', 'make-js-lib', 'browserSync'], function () {
+	gulp.watch('build/sass/**/*.scss', ['make-css', 'minify-css', 'cms-css', browserSync.reload]); //watch sass in project sass folder, run tasks
+	gulp.watch('build/js/**/*.js', ['make-js', browserSync.reload]);  //watch js in project js folder, run tasks
 })
 
 
-gulp.task('default', ['pure', 'watch']);
+gulp.task('default', ['watch']);

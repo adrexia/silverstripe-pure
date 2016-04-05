@@ -794,6 +794,15 @@
   .pure-button.pure-button-success, .pure-button.pure-button-error, .pure-button.pure-button-warning, .pure-button.pure-button-secondary, .pure-button.pure-button-primary {
     color: white;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  .pure-button button,
+  .pure-button input[type="button"],
+  .pure-button input[type="reset"],
+  .pure-button input[type="submit"] {
+    -webkit-appearance: none;
+    display: block;
+    background: none;
+    border: none;
+    color: inherit; }
 
 .pure-button-primary {
   background: #0078e7; }
@@ -893,7 +902,7 @@ h1 a.pure-button-with-heading, h2 a.pure-button-with-heading, h3 a.pure-button-w
   .menu-trigger:hover, .menu-trigger:focus, .menu-trigger.active {
     background: #ba3333;
     color: #fff; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 480px) {
     .menu-trigger {
       display: none; } }
 
@@ -1107,7 +1116,7 @@ figure.featured-image img {
     margin: 0 auto 40px; }
     .captionImage.center p, figure.featured-image.center p {
       margin: 0px 20px 40px 20px; }
-  @media screen and (min-width: 35.5em) {
+  @media screen and (max-width: 750px) {
     .captionImage.left, .captionImage.right, .captionImage.leftAlone, .captionImage.center, figure.featured-image.left, figure.featured-image.right, figure.featured-image.leftAlone, figure.featured-image.center {
       margin-bottom: 40px;
       margin-top: 10px; }
@@ -1124,7 +1133,7 @@ figure.featured-image img {
     font-size: 16px;
     line-height: 22px;
     padding-bottom: 2px; }
-    @media screen and (min-width: 35.5em) {
+    @media screen and (max-width: 750px) {
       .captionImage p, figure.featured-image p {
         text-align: center;
         margin: 0px 20px 40px 20px; } }
