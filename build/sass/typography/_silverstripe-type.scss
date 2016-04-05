@@ -3,14 +3,17 @@
 * to be imported into the CMS
 */
 
+iframe {
+	border: 0;
+}
 
-.captionImage, .media{
-	.caption{
+.captionImage, .media {
+	.caption {
 		font-style:italic;
 	}
 }
 
-img{
+img {
 	max-width: 100%;
 	height: auto;
 	display: block;
@@ -40,22 +43,22 @@ img{
 
 /* Media insert formatting  (Youtube embed) */
 .media {
-	&.center{
+	&.center {
 		margin:0 auto;
 		text-align:center;
 	}
-	&.left{
+	&.left {
 		float:left;
 		clear:left;
 		margin: 0 18px 18px 0px;
 	}
-	&.leftAlone{
+	&.leftAlone {
 		margin: 0 18px 18px 0;
 		float: none;
 		display: block;
 		clear: both;
 	}
-	&.right{
+	&.right {
 		float:right;
 		clear:right;
 		margin: 0 0 18px 18px;
@@ -63,6 +66,7 @@ img{
 }
 
 figure.featured-image {
+
 	img {
 		margin-bottom:0;
 	}
@@ -75,34 +79,40 @@ figure.featured-image {
 		float: left;
 		margin: 0 80px 40px 20px;
 	}
-	&.right{
+	&.right {
 		float:right;
 		margin: 0 0 40px 80px;
-		p{
+		p {
 			margin: 0px 60px 40px 20px;
 		}
 	}
-	&.leftAlone{
+	&.leftAlone {
 		float:none;
 		margin: 0 80px 40px 20px;
 	}
-	&.center{
+
+	&.center {
 		margin: 0 auto 40px;
-		p{
+		p {
 			margin: 0px 20px 40px 20px;
 
 		}
 	}
-	&.left, &.right, &.leftAlone, &.center{
-		@include respond(sm){
+
+	&.left,
+	&.right,
+	&.leftAlone,
+	&.center {
+		@include respond(sm) {
 			margin-bottom:40px;
 			margin-top:10px;
-			p{
+			p {
 				text-align: center;
 				margin: 0px 0 40px 20px;
 			}
 		}
 	}
+
 	p {
 		clear: both;
 		margin: 0px 0 40px 60px;
@@ -113,20 +123,23 @@ figure.featured-image {
 		font-size: 16px;
 		line-height: 22px;
 		padding-bottom: 2px;
-		@include respond(sm){
+
+		@include respond(sm) {
 			text-align: center;
 			margin: 0px 20px 40px 20px;
 		}
 	}
+
 	img {
 		margin: 0 0 5px 0;
 		border: 0;
 	}
 }
 
-%decorated-link{
+%decorated-link {
 	left: 0;
 	margin: 0 5px 0 0px;
+
 	&:before {
 		color: $body-font-color;
 		font-family: "ion";
@@ -152,7 +165,7 @@ a[href$=".GIF"],
 a[href$=".jpg"],
 a[href$=".JPG"],
 a[href$=".jpeg"],
-a[href$=".JPEG"]{
+a[href$=".JPEG"] {
 	@extend %decorated-link;
 	&:before {
 		content: '\f147';
@@ -168,11 +181,12 @@ a[href$=".xls"],
 a[href$=".XLS"],
 a[href$=".xlsx"],
 a[href$=".XLSX"],
-.xls, 
+.xls,
 a[href$=".pdf"],
 a[href$=".PDF"],
 .pdf {
 	@extend %decorated-link;
+
 	&:before {
 		content: '\f12e';
 	}
@@ -180,8 +194,8 @@ a[href$=".PDF"],
 
 .external {
 	@extend %decorated-link;
+
 	&:before {
 		content: '\f13a';
 	}
 }
-

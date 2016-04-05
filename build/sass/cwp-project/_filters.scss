@@ -6,13 +6,15 @@
 	border-bottom: 1px solid $default-color;
 }
 
-.month-filter{
+.filter-month {
 	clear: fix;
-	margin-top:10px;
-	padding-bottom:30px;
+	margin-top: 10px;
+	padding-bottom: 30px;
+
 	ol {
 		margin: 0;
 	}
+
 	.year {
 		clear: both;
 		float: left;

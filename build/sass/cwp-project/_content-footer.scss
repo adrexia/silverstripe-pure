@@ -2,22 +2,27 @@
 .content-footer {
 	margin-top:50px;
 	float:right;
+
 	i {
 		font-size: 1.2em;
 		margin-right: 5px;
 	}
-	.pull-left{
+
+	.pull-left {
 		a {
 			padding-right:20px;
 		}
 	}
-	.print-share{
+
+	.print-share {
 		text-align:right;
+
 		a {
 			padding-left:20px;
 		}
 	}
-	.last-edited{
+
+	.last-edited {
 		text-align:right;
 	}
 }

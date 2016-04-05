@@ -1,13 +1,13 @@
 <% if VisibleCarouselItems %>
 <h2 class="sr-only">Image slider, uses keyboard to navigate</h2>
-<div class="slider-wrap flexslider">
+<div class="slider-wrap">
 	<ul class="slides">
 		<% loop VisibleCarouselItems %>
-			<li class="$FirstLast slide-{$Pos} <% if First %>flex-active-slide<% end_if %>">
+			<li class="$FirstLast slide-{$Pos} <% if First %>active-slide<% end_if %>">
 				<% if Link %><a href="$Link.Link" class="slide-link"><% end_if %>
 					<div class="image-wrap">
 						<img src="$Image.CroppedImage(1200, 350).URL" alt="$Caption.LimitCharacters(255)">
-					</div> 
+					</div>
 
 					<% if Caption %>
 					<div class="text">

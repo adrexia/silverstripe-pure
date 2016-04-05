@@ -12,12 +12,15 @@
 /*
  * A file for Custom mixins and placeholders
  */
+/**
+ * Utility classes are short modifiers used across components
+ */
 .valign {
   display: table;
   width: 100%; }
   .valign .center {
-    display: table-cell;
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: table-cell; }
 
 .pull-right {
   float: right; }
@@ -27,9 +30,6 @@
 
 .clearfix {
   clear: both; }
-
-iframe {
-  border: 0; }
 
 .meta-data {
   font-size: 12px; }
@@ -1038,6 +1038,9 @@ table {
 * Typography specific to how silverstripe outputs CMS editable fields
 * to be imported into the CMS
 */
+iframe {
+  border: 0; }
+
 .captionImage .caption, .media .caption {
   font-style: italic; }
 

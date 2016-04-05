@@ -4,15 +4,18 @@
 	float: left;
 	margin: 0;
 	padding: 0;
+
 	.label {
 		margin: 3px 6px 3px 0;
 		display: block;
 		border-radius: 3px;
 		float: left;
 		padding: 3px 5px;
-		&.default{
+
+		&.default {
 			background: $default-color;
 		}
+		
 		&.primary {
 			background: $primary-color;
 			a {

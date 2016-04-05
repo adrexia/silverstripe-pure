@@ -1,17 +1,13 @@
-@charset "UTF-8";
-
 @import "utilities/var-globals";
 @import "utilities/mixins";
 @import "utilities/classes";
-
-
 @import "utilities/icons";
 
 @import "pure-theme/*"; // this can't easily be a module due to when we need to include it... (pre typography)
 @import "typography/*";
-@import "../modules/*";
+@import "cwp-project/*";
 
-//
+
 @import "components/*";
 @import "forms/*";
 

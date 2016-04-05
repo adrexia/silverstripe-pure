@@ -1,41 +1,39 @@
-// vertically align stuff
+/**
+ * Utility classes are short modifiers used across components
+ */
+
+// vertically align a child center element
 .valign {
 	display: table;
 	width: 100%;
+
 	.center {
-		display: table-cell;
 		vertical-align: middle;
-	}​
-	> article {
+		display: table-cell;
 	}
 }
 
 // Add generic pull-directions
-.pull-right{
+.pull-right {
 	float: right;
 }
 
-.pull-left{
+.pull-left {
 	float: left;
 }
 
 .clearfix {
-	clear:both;
-}
-
-iframe {
-	border: 0;
+	clear: both;
 }
 
 // Generic style for meta data
-.meta-data{
+.meta-data {
 	font-size: $base-font-size - 3;
 }
 
 /**
  * Screen reader helper classes
  */
-
 .sr-only {
 	position: absolute;
 	width: 1px;

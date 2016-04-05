@@ -1,4 +1,7 @@
 var gulp = require('gulp'),
+	kss = require('kss'),
+	del = require('del'),
+	fs = require("fs"),
 	rucksack = require('gulp-rucksack'), //PostCSS CSS super powers library: http://simplaio.github.io/rucksack/docs/
 	rename = require('gulp-rename'),
 	sourcemaps   = require('gulp-sourcemaps'),
@@ -15,6 +18,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify');
 
 
+
 /**
  * Live browser previews
  */
@@ -29,8 +33,23 @@ gulp.task('browserSync', function() {
 
 
 /**
- * Move pure from node_modules into our ibution folder
- * We don't want to edit this file, as there's no real need with such a samll framework
+ * Clean out the current KSS styleguide folders
+ */
+gulp.task('clean:kss', function() {
+	return del(['styleguide/**/*'])
+});
+
+/**
+ * Create fresh documentation by reading through our sass files
+ * @param callback | function
+ */
+gulp.task('kss', ['clean:kss'], function(callback) {
+	return kss(JSON.parse(fs.readFileSync("kssconf.json")), callback);
+});
+
+/**
+ * Move pure from node_modules into our distribution folder
+ * We don't want to edit this file, as there's no real need with such a small framework
  */
 gulp.task('pure', function() {
 	return gulp.src('node_modules/purecss/build/pure.css')
@@ -60,6 +79,8 @@ gulp.task('make-css', function() {
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('css/src'))
 });
+
+
 
 /**
  * Minify CSS using cleanCSS, and output to an all.min file.
@@ -95,7 +116,7 @@ gulp.task('cms-css', ['make-css', 'minify-css'], function() {
  */
 gulp.task('make-js', function() {
 	return gulp.src([
-			'build/modules/**/*.src.js',
+			'build/components/**/*.src.js',
 			'build/js/**/*.src.js'
 		])
 		.pipe(jshint({
@@ -113,13 +134,14 @@ gulp.task('make-js', function() {
 
 
 /**
- * @todo: Include libraries by hand to allow for specific ordering
+ * Include libraries by hand to allow for specific ordering
  * Skip linting, as these are likely not our own files
  */
 gulp.task('make-js-lib', function() {
 	return gulp.src([
-			// 'build/modules/**/*.src.js',
-			// 'build/js/**/*.src.js'
+			'build/js/lib/html5shiv-printshiv.js',
+			'build/js/lib/jquery-2.2.2.js',
+			'build/js/lib/modernizr.min.js'
 		])
 		.pipe(sourcemaps.init())
 		.pipe(concat('script.js'))
@@ -133,16 +155,10 @@ gulp.task('make-js-lib', function() {
 });
 
 
-
-gulp.task('watch', ['pure', 'browserSync', 'make-css', 'minify-css', 'cms-css', 'make-js'], function () {
-
-	gulp.watch('build/sass/**/*.scss', ['make-css', 'minify-css', 'cms-css', browserSync.reload]); //watch sass in project sass folder, run tasks
-	gulp.watch('build/modules/**/*.scss', ['make-css', 'minify-css', 'cms-css', browserSync.reload]); //watch sass in project modules folder, run tasks
-
-	gulp.watch('build/js/**/*.js', ['make-js', browserSync.reload]);  //watch js in project js folder, run tasks
-	gulp.watch('build/modules/**/*.js', ['make-js', browserSync.reload]);  //watch js in project modules folder, run tasks
-
-	// @todo libraries
+gulp.task('watch', ['pure', 'browserSync', 'make-css', 'minify-css', 'cms-css', 'make-js', 'kss'], function () {
+	gulp.watch('build/sass/**/*.scss', ['make-css', 'minify-css', 'cms-css', 'kss', browserSync.reload]); //watch sass in project sass folder, run tasks
+	gulp.watch('build/js/*.js', ['make-js', browserSync.reload]);  //watch js in project js folder, run tasks
+	gulp.watch('build/modules/lib/*.js', ['make-js-lib', browserSync.reload]);  //watch js in project modules folder, run tasks
 })
 
 

@@ -1,0 +1,6 @@
+{
+	"verbose": true,
+	"source": "build/sass/",
+	"destination": "styleguide/",
+	"css": "../css/style.css"
+}

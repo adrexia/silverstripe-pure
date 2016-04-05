@@ -1,36 +1,23 @@
-/*
-* For Silverstripe specific styling (e.g. to get forms to work as intended)
-*/
-
-
-/*
- * Forms
+/**
+ * For Silverstripe specific styling (to get forms to work as intended)
+ * Note: This file should not be used as an example of how to structure css - its
+ * just a work around for forms in silverstripe. Remove if/what you can.
  */
 
 form {
 	@extend .pure-form;
+	clear: fix;
+
 	input.text {
 		padding-top: 7px;
 	}
+
 	label {
 		line-height: 3em;
 	}
-	div.field{
+
+	div.field {
 		margin-bottom:10px;
-	}
-}
-
-
-.pure-button {
-	button,
-	input[type="button"],
-	input[type="reset"],
-	input[type="submit"] {
-		-webkit-appearance: none;
-		display: block;
-		background: none;
-		border: none;
-		color: inherit;
 	}
 }
 
@@ -39,15 +26,11 @@ form {
 	margin-right: 20px;
 }
 
-form {
-	clear: fix;
-}
-
 .fieldset { //Silverstripe uses fieldsets wrongly, so don't style with default
 	border: none;
 }
 
-#ForgotPassword { //ID only used because silverstripe does not provide a class
+#ForgotPassword { //ID only used because silverstripe does not provide a class :(
 	clear: fix;
 	float: left;
 	font-size: 0.8em;

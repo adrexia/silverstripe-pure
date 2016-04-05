@@ -1,8 +1,10 @@
 .pure-paginator {
 	display: inline;
+
 	.pure-button{
 		height: 2.5em;
 	}
+	
 	.prev, .next {
 		text-shadow: none;
 		color: $body-font-color;
@@ -16,5 +18,3 @@
 	text-align: center;
 	margin-top: 20px;
 }
-
-

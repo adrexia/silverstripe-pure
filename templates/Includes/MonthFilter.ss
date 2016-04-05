@@ -1,5 +1,5 @@
 <% if AvailableMonths %>
-	<div class="month-filter">
+	<div class="filter-month">
 		<h2 class="sr-only">Month filter:</h2>
 		
 		<% loop AvailableMonths %>
